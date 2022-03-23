@@ -6,12 +6,10 @@ public class Arma : MonoBehaviour
 {
     public string nome = "ARMA";
 
-    List<Adjetivo> preAdj;
-    List<Adjetivo> posAdj;
+    List<Adjetivo> preAdj = new List<Adjetivo>();
+    List<Adjetivo> posAdj = new List<Adjetivo>();
     void Start()
     {
-        preAdj = new List<Adjetivo>();
-        posAdj = new List<Adjetivo>();
         getArma();
     }
 
@@ -52,10 +50,12 @@ public class Arma : MonoBehaviour
         }
         catch
         {
+            print("nenhuma arma pega");
             return false;
         }
         while (armaParte != null)
         {
+            print("iterando em: "+armaParte.name);
             foreach (Adjetivo adjetivo in armaParte.adjetivos)
             {
                 if(Random.value<=adjetivo.chance)

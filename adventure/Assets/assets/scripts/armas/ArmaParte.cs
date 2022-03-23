@@ -14,6 +14,6 @@ public class ArmaParte : MonoBehaviour
         
     }
     public ArmaParte getProximaParte() {
-        return proximaParte != null ? proximaParte.GetChild(0).GetComponent<ArmaParte>() : null;
+        return proximaParte != null? proximaParte.GetChild(0).GetComponent<ArmaParte>() : null;
     }
 }

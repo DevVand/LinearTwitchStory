@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4691244000658803501}
   - component: {fileID: 6506189564305426454}
+  - component: {fileID: 8954137285360700942}
   m_Layer: 0
   m_Name: base ornamentada
   m_TagString: Untagged
@@ -129,6 +130,23 @@ MonoBehaviour:
   proximaParte: {fileID: 1528950729351290385}
   adjetivos:
   - nome: bonita
+    posicao: 0
+    chance: 1
+--- !u!114 &8954137285360700942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081671418968507318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa71e11a785fd046aec052616e83e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximaParte: {fileID: 1528950729351290385}
+  adjetivos:
+  - nome: bonit@
     posicao: 0
     chance: 1
 --- !u!1 &1198244370135841100
